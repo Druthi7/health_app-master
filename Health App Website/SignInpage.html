@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Sharadruthi">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>SIGN IN</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div>
+    <h1 class="register-title">Welcome</h1>
+    <form class="register">
+      <!--Input taken to sign in for the page ie email and password-->
+      <input type="email" class="register-input" placeholder="Admin ID" id="email">
+      <input type="password" class="register-input" placeholder="Password" id="password">
+      <!--log in button redirects to the home page-->
+      <input type="button" value="LOG IN" class="register-button" onclick="reg()">
+      <a href="forgotpassword.html"> forgot password</a>
+    </form>
+    <!--Java Script code and firebase depenencies-->  
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>

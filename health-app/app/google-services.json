@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "871137122836",
+    "firebase_url": "https://health-app-bc30e.firebaseio.com",
+    "project_id": "health-app-bc30e",
+    "storage_bucket": "health-app-bc30e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871137122836:android:623e830d193bc08ff1a501",
+        "android_client_info": {
+          "package_name": "com.example.healthapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871137122836-d09m3pgb32nfj5q9uoevblq38utesjk2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.healthapplication",
+            "certificate_hash": "076d615fc10c22956836f4318bb0776a8fb0783c"
+          }
+        },
+        {
+          "client_id": "871137122836-1rcg3j3p0ndvbt53n1phcun4cn3g2f6c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.healthapplication",
+            "certificate_hash": "a49161b7e3fbdda193515a0924a1267a219ac95d"
+          }
+        },
+        {
+          "client_id": "871137122836-3pdko4nghigg84gvq2cqk0ae5gf4seg2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvkwLAHN8XMhpZ8HvFLmtpQFZARZILif4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871137122836-3pdko4nghigg84gvq2cqk0ae5gf4seg2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

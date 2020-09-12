@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Sharadruthi">
+  <link rel="stylesheet" href="styles/styles.css">
+  <!-- <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico"> -->
+
+  <title>Health Application</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css"
+    rel="stylesheet" id="bootstrap-css">
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--Nav bar for the users page-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Health App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./home.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">UserData<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./groups.html">Groups</a>
+        </li>
+
+      </ul>
+      <!--  LOG OUT button-->
+      <button class="btn btn-outline-success my-2 my-sm-0" style="float:right;color:white" type="submit"
+        onclick="signout()">LOG OUT</button>
+    </div>
+  </nav>
+  <br><br><br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class="d">List of Users</h1>
+      </div>
+      <div class="col-md-2">
+        <button id="btnExport" class="buttonU" onclick="fnExcelReport();">Export to Excel</button>
+        <!--This button is used to download the user data into excel sheet-->
+        <iframe id="txtArea1" style="display:none"></iframe>
+      </div>
+    </div>
+
+
+  </div>
+  <br>
+  </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="col-md-12">
+      <table id="headerTable" class="minimalistBlack">
+        <!-- table to display the users and user related data page  -->
+        <thead>
+          <tr>
+
+              <td><h4>UserID</h4></td>
+              <td><h4>FirstName</h4></td>
+              <td><h4>LastName</h4></td> 
+              <td><h4>StepCount</h4></td>
+              <td><h4>SleepCount</h4></td>
+              <td><h4>Hyderation</h4></td>
+              <td><h4>Fruits</h4></td>
+              <td><h4>Vegetables</h4></td>
+              <td><h4>Calories</h4></td>
+              <td width ='4000'><h4>Action</h4></td>
+            </tr>
+      </thead>
+      <tbody id='table_body1'>
+      </tbody>
+    </table>
+   </div>
+
+  </div>
+  <!--Java Script code and firebase depenencies-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+  <script>
+    $(function () {
+      $('#datepicker').datepicker({
+        format: "dd/mm/yyyy",
+        autoclose: true,
+        todayHighlight: true,
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        autoclose: true,
+        changeMonth: true,
+        changeYear: true,
+        orientation: "button"
+      });
+    });
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script src="./script/script.js"></script>
+  <script src="./script/scriptUser.js"></script>
+  <script type="text/javascript"></script>
+</body>
+
+</html>

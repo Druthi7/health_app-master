@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Sharadruthi">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico"> -->
+    <title>Health Application</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!--Nav bar for the home page-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Health App</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./users.html">UserData</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./groups.html">Groups</a>
+                    </li>
+                </ul>
+                      <!--  LOG OUT button -->  
+                        <button class="btn btn-outline-success my-2 my-sm-0"style="float:right;color:white" type="submit" onclick="signout()">LOG OUT</button>
+                </div>
+              </nav>
+              <br><br><br>
+              <header>
+              <h1>
+              <table class="tg col-sm-12 center">
+              <tr>
+                <td width="10"></td>
+                <td width="140"></td>
+                <td width="10">Welcome!!!!!!!!!!!!!!!</td>
+              </tr>
+              </table>
+              </h1>
+              </header>
+              <br><br><br>
+              <div>
+                <!--code for two buttons which can navigate to other respective pages -->
+                <table class="tg col-sm-7 center">
+                    <td width="400"><input type="button" value="Groups" class="Group-button" onclick="groups()"></td>
+                    <td width="400"></td>
+                    <td width="400"><input type="button" onclick='users()' value="Users" class="Group-button"></td>
+                </table>   
+            </div>
+            <!--Java Script code and firebase depenencies-->
+            <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+            <script src="./script/script.js"></script>
+  </body>
+</html>

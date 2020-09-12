@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Sharadruthi">
+    <link rel="stylesheet" href="styles/styles.css">
+    
+
+    <title>Health Application</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    
+  </head>
+
+    
+  <body>
+    <!--code for Nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Health App</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./users.html">UserData<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./groups.html">Groups</a>
+                    </li>
+
+                  </ul>
+                      <!--  LOG OUT button --> 
+                        <button class="btn btn-outline-success my-2 my-sm-0"style="float:right;color:white" type="submit" onclick="signout()">LOG OUT</button>
+      
+                </div>
+        </nav>
+
+        <form>
+        <!-- Code for the form that takes group name, step chanllenge and sleep challenge as input-->
+            
+            <table class='tab'>
+            <tr>
+              <td><h2><label>Group Name: </label></h2></td>
+              <td><input type="text" class="a3" id="name" required="required"></td>
+            </tr><br>
+            <tr>
+                <td><h2><label>Step Challenge:</label></h2></td>
+                <td> <input type="number" class="a1" id="stepChallenge"></td>
+            </tr><br>
+            <tr>
+                <td><h2><label>Sleep Challenge:</label></h2></td>
+                <td><input type="number" class="a2" id="SleepChallenge"></td>
+             </tr>
+           <!--  button to add the data to the database -->
+             
+          </table>
+          <br>
+           <h3><button id="addBtn" class="submit">Create Group</button> </h3>
+        </form> 
+        </div>
+        <!--Java Script code and firebase depenencies-->
+        <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>    
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="./script/script.js"></script>
+        <script src="./script/scriptgroups.js"></script>
+        
+     </body>
+
+</html>
